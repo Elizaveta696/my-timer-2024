@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap">
+</head>
+<body>
+    <h1>MY TIMER</h1>
+    <div id="container">
+        
+        <div id="days" class="item">00</div>
+        <div class="slash item">:</div>
+        <div id="hours" class="item">00</div>
+        <div class="slash item">:</div>
+        <div id="minutes" class="item">00</div>
+        <div class="slash item">:</div>
+        <div id="seconds" class="item">00</div>
+
+        
+        <div class="days-title">DAYS</div>
+        <div class="hours-title">HOURS</div>
+        <div class="minutes-title">MINUTES</div>
+        <div class="seconds-title">SECONDS</div>
+        
+    </div>
+    <div class="input-btn"><button id="show-btn">SET EVENT</button></div>
+    
+    <div id="custom-dialog" class="dialog">
+        <h2>Select Time Remaining</h2>
+        <div>
+            <label for="year-input">Year:</label>
+            <input type="number" id="year-input" min="2024" max="2100">
+        </div>
+        <div>
+            <label for="month-input">Month:</label>
+            <input type="number" id="month-input" min="1" max="12" minlength="2" >
+        </div>
+        <div>
+            <label for="days-input">Day:</label>
+            <input type="number" id="days-input" min="1" max="32" minlength="2">
+        </div>
+        <div>
+            <label for="hours-input">Hours:</label>
+            <input type="number" id="hours-input" min="00" max="24" minlength="2">
+        </div>
+        <div>
+            <label for="minutes-input">Minutes:</label>
+            <input type="number" id="minutes-input" min="00" max="59" minlength="2">
+        </div>
+        <div>
+            <label for="seconds-input">Seconds:</label>
+            <input type="number" id="seconds-input" min="00" max="59" minlength="2">
+        </div>
+        <button id="set-event-btn">Set Event</button>
+    </div>
+
+    <div class="outer"></div>
+    <div class="gradient-bg"></div>
+    <script src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</body>
+</html>
