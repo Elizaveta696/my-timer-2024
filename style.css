@@ -130,6 +130,7 @@ h1{
 }
 
 #days, #hours, #minutes, #seconds{
+
     background-color: hsl(236, 21%, 26%, 0.5);
     border-radius: 7px;
     color: hsl(345, 95%, 68%);
@@ -170,6 +171,7 @@ h1{
     #container{
         width: fit-content;
         margin-top: 15%;
+        margin-right: 7px ;
     }
     .outer{
         display:none;
